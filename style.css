@@ -1,4 +1,4 @@
-/* RESET OR BASE STYLES */
+
 * {
   margin: 0;
   padding: 0;
@@ -13,46 +13,56 @@ body {
 }
 
 /* HEADER / NAV MENU */
+/* HEADER / NAV MENU */
 #header {
-  display: flex;
-  align-items: center;
-  background-color: #00c0ff; /* light blue */
-  padding: 0.5rem 1rem;
-}
-
-/* Logo on the left */
-#logo {
-  font-weight: bold;
-  color: #fff;
-  margin-right: 2rem;
-}
-
-/* Navigation Menu */
-#top-nav ul {
-  list-style-type: none;
-  display: flex;
-}
-
-#top-nav li {
-  margin-right: 1rem;
-}
-
-#top-nav a {
-  color: #fff;
-  text-decoration: none;
-  font-weight: bold;
-  padding: 0.5rem;
-}
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 999; /* ensures it appears above all content */
+	display: flex;
+	align-items: center;
+	background-color: #00c0ff;
+	padding: 0.5rem 1rem;
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Logo */
+  #logo {
+	font-weight: bold;
+	color: #fff;
+	margin-right: 2rem;
+	font-size: 1.2rem;
+  }
+  
+  /* Navigation */
+  #top-nav ul {
+	list-style-type: none;
+	display: flex;
+	margin: 0;
+	padding: 0;
+  }
+  
+  #top-nav li {
+	margin-right: 1rem;
+  }
+  
+  #top-nav a {
+	color: #fff;
+	text-decoration: none;
+	font-weight: bold;
+	padding: 0.5rem;
+  }
+  
 
 /* Section Styling */
 section {
-  background-color: #fff;
-  margin: 2rem auto;
-  padding: 1.5rem;
-  max-width: 800px;
-  box-shadow: 0 0 5px rgba(0,0,0,0.1);
-}
-
+	background-color: #fff;
+	margin: 2rem auto;
+	padding: 6rem 1.5rem 1.5rem;
+	max-width: 800px;
+	box-shadow: 0 0 5px rgba(0,0,0,0.1);
+  }
 section h2 {
   margin-bottom: 0.5rem;
   font-size: 1.5rem;
